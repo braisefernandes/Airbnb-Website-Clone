@@ -1,0 +1,122 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: Georgia, Times, 'Times New Roman', serif;
+}
+
+.mainbody{
+    height: 543px;
+    width: 100%;
+    background-image: url(/Airbnb_website/Signup_page/sign.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#start{
+    display: inline;
+    position: absolute;
+    color:aliceblue;
+    margin-top: 30px;
+    margin-left: 35px;
+}
+
+.nav {
+    position: absolute;
+    display: flex;
+    font-size: 20px; 
+    padding-left: 40px; 
+    padding-top: 20px; 
+}
+
+#nav1 a{
+    padding-left: 20px; 
+    text-decoration: none; 
+    color:white;
+}
+
+#mainlogo{
+    text-shadow: 0 0 20px white;
+}
+
+
+#signup_credentials{
+    height: 488px;
+    width:30%;
+    position: absolute;
+    background-color: rgba(255,255,255,0.1);
+    backdrop-filter: blur(2px);
+    margin-left: 340px;
+    margin-top: 29px;
+    border-radius:5%;
+    box-shadow: 0 0 20px black;
+}
+
+#signup_credentials input {
+      padding-left: 13px;
+      background-color: white;
+      border-style: none;
+}
+
+
+#email, #password,#fullName,#confirmPassword{
+    border-radius: 13px; 
+    height:30px; 
+    margin-top: 20px; 
+    width:87%; 
+    margin-left: 20px; 
+    border:2px solid black;
+}
+
+#bn1{
+    border-radius: 13px; 
+    height:30px; 
+    margin-top: 30px; 
+    width:89%; 
+    margin-left: 23px; 
+    border:2px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none; 
+    color:black;
+}
+
+#bn1 input{
+    border-style: none;
+}
+
+#loginButton {
+    border-radius: 13px;
+    height: 35px;
+    width: 40%;
+    margin-top: 20px;
+    margin-left: 100px;
+    border: 2px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    color: black;
+    cursor: pointer;
+}
+
+#bn1 {
+    background-color: #ff385c; 
+} 
+
+
+#bn1 input{
+    background-color: #ff5a60;
+}
+
+#bn1 input:hover {
+    background-color: #ff385c; 
+}
+
+
+
+#signuptxt p{
+    padding-left: 80px;
+    text-shadow: 0 0 100px rgb(227, 243, 7);
+    font-size: 50px;
+}

@@ -1,0 +1,572 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: Georgia, Times, "Times New Roman", serif;
+}
+
+.mainbody1 {
+  height: 490px;
+  width: 100%;
+  background-image: url(/Airbnb_website/Home_page/Home_images/hero.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#main1 {
+  font-size: 50px;
+  padding-left: 35px;
+  padding-top: 30px;
+  width: 350px;
+  height: 60px;
+  animation: spin 1.5s ease forwards; /* Apply the spin animation quickly */
+  transition: transform 0.5s ease, opacity 0.5s ease;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg) scale(0.5); 
+    opacity: 0; 
+  }
+  100% {
+    transform: rotate(360deg) scale(1); /* Complete the spin and return to full size */
+    opacity: 1; 
+  }
+}
+
+.nav {
+  display: flex;
+}
+
+#stex {
+  background-color: rgba(46, 44, 44, 0.1);
+  backdrop-filter: blur(2px);
+  height: 40px;
+  width: 230px;
+  border-radius: 50px;
+  margin-top: 32px;
+  display: flex;
+}
+
+#stays {
+  width: 70px;
+  height: 28px;
+  margin-top: 9px;
+  margin-left: 25px;
+}
+
+#stays:hover {
+  text-shadow: 0 0 20px goldenrod;
+}
+
+#experience:hover {
+  text-shadow: 0 0 20px goldenrod;
+}
+
+#experience {
+  width: 70px;
+  height: 28px;
+  margin-top: 9px;
+  margin-left: 9px;
+}
+
+#nav11 {
+  background-color: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(2px);
+  height: 40px;
+  width: 340px;
+  border-radius: 50px;
+  margin-top: 32px;
+  margin-left: 100px;
+  display: flex;
+}
+
+#nav12 {
+  width: 170px;
+  height: 28px;
+  margin-top: 10px;
+  margin-left: 25px;
+}
+
+#nav12:hover {
+  text-shadow: 0 0 20px rgb(74, 70, 70);
+}
+
+#nav13 {
+  width: 70px;
+  height: 28px;
+  margin-top: 10px;
+  margin-left: 12px;
+}
+
+#nav14 {
+  width: 28px;
+  margin-top: 10px;
+  margin-left: 14px;
+}
+
+#nav15 {
+  width: 70px;
+  height: 28px;
+  margin-top: 10px;
+  margin-left: 1px;
+}
+
+#welcome-message {
+  opacity: 0; 
+  animation: fadeIn 2s ease-in-out forwards; 
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+#txt {
+  height: 20px;
+  width: 500px;
+  padding-left: 20px;
+  padding-top: 47px;
+  font-weight: 900;
+  font-size: 40px;
+  color: aliceblue;
+  transform: translateX(200px);
+  animation: fadeInSide 1s forwards;
+}
+
+@keyframes fadeInSide {
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+#txt > p {
+  transition: margin-left 0.3s ease, transform 0.3s ease;
+}
+
+#txt > p:hover {
+  margin-left: 15px;
+  transform: scale(1.1);
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.7);
+}
+
+#txt1 {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 1s forwards;
+  animation-delay: 0.5s;
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+#txt1 {
+  height: 20px;
+  width: 290px;
+  padding-left: 20px;
+  padding-top: 85px;
+  font-weight: 600;
+  font-size: 12px;
+  color: white;
+}
+
+.searchbar {
+  display: flex;
+}
+
+#search {
+  margin-left: 65px;
+  height: 60px;
+  width: 700px;
+  border-radius: 50px;
+  background-color: aliceblue;
+  margin-top: 85px;
+  display: flex;
+  transform: translateY(200px);
+  animation: fadeUp 1s forwards;
+}
+
+@keyframes fadeUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+#search1 {
+  width: 190px;
+  height: 35px;
+  margin-top: 11px;
+  margin-left: 30px;
+  border-right: 1px solid rgb(172, 172, 172);
+}
+
+#search2 {
+  width: 110px;
+  height: 35px;
+  margin-top: 11px;
+  margin-left: 20px;
+  border-right: 1px solid rgb(172, 172, 172);
+}
+
+#search3,
+#search4 {
+  width: 110px;
+  height: 35px;
+  margin-top: 11px;
+  margin-left: 20px;
+  border-right: 1px solid rgb(172, 172, 172);
+}
+
+#search5 {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #ff5a60;
+  margin-top: 5px;
+  margin-left: 31px;
+}
+
+.dropdown {
+  position: absolute;
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  z-index: 1000;
+  display: none; /* Hidden by default */
+  width: 300px;
+  border-radius: 8px;
+}
+
+/* Positioning each dropdown */
+#dropdown1 {
+  top: 100px; /* Adjust based on your layout */
+  left: 50px; /* Adjust based on your layout */
+}
+
+.close-btn {
+  float: right;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+/* Example input styling */
+.dropdown input {
+  width: 100%;
+  padding: 8px;
+  margin: 5px 0;
+  box-sizing: border-box;
+}
+
+.mainbody2 {
+  height: 1740px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  background-image: linear-gradient(
+    to bottom,
+    rgb(213, 223, 233),
+    lightblue,
+    lightgreen
+  );
+}
+
+#icons {
+  background-color: aliceblue;
+  height: 50px;
+  width: 97%;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  border-radius: 30px;
+  top: 466px;
+  left: 18px;
+  overflow-x: auto;
+  white-space: nowrap;
+  transition: transform 0.5s ease-in-out, box-shadow 0.5s ease-in-out;
+  transform: perspective(600px)
+}
+
+
+#icon1 {
+  height: 20px;
+  width: 15px;
+  margin-left: 60px;
+  font-size: 20px;
+  display: inline-block;
+  margin-right: 20px;
+}
+
+#icons::-webkit-scrollbar {
+  display: none;
+}
+
+#icons > div:hover {
+  box-shadow: 0,0,10px,black;
+}
+
+#icon1:hover {
+    transform: translateY(-10px) rotateY(10deg) scale(1.1); /* Move up, rotate slightly, and scale */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); /* Add shadow for depth */
+    transition: transform 0.3s ease;
+}
+
+#image1 {
+  height: 354px;
+  width: 300px;
+  background-image: url(/Airbnb_website/Home_page/Home_images/conimage1.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 16px;
+}
+
+#image2 {
+  height: 354px;
+  width: 300px;
+  background-image: url(/Airbnb_website/Home_page/Home_images/conimage2.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 16px;
+}
+
+#image3 {
+  height: 354px;
+  width: 300px;
+  background-image: url(/Airbnb_website/Home_page/Home_images/conimage3.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 16px;
+}
+
+#image4 {
+  height: 354px;
+  width: 300px;
+  background-image: url(/Airbnb_website/Home_page/Home_images/conimage4.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 16px;
+}
+
+#image5 {
+  height: 354px;
+  width: 300px;
+  background-image: url(/Airbnb_website/Home_page/Home_images/conimage5.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 16px;
+}
+
+#image6 {
+  height: 354px;
+  width: 300px;
+  background-image: url(/Airbnb_website/Home_page/Home_images/conimage6.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 16px;
+}
+
+#image7 {
+  height: 354px;
+  width: 300px;
+  background-image: url(/Airbnb_website/Home_page/Home_images/conimage7.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 16px;
+}
+
+#image8 {
+  height: 354px;
+  width: 300px;
+  background-image: url(/Airbnb_website/Home_page/Home_images/conimage8.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 16px;
+}
+
+#image9 {
+  height: 354px;
+  width: 300px;
+  background-image: url(/Airbnb_website/Home_page/Home_images/conimage9.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 16px;
+}
+
+#container1 {
+  height: 464px;
+  width: 300px;
+  background-color: aliceblue;
+  border-radius: 30px;
+}
+
+#container1:hover {
+    transform: scale(1.1); /* Move up, rotate slightly, and scale */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); /* Add shadow for depth */
+    transition: transform 0.8s ease;
+}
+
+#container2 {
+  height: 464px;
+  width: 300px;
+  background-color: aliceblue;
+  border-radius: 30px;
+}
+
+#container2:hover {
+  transition: transform 0.8s ease;
+  transform: scale(1.1);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+#container3 {
+  height: 464px;
+  width: 300px;
+  background-color: aliceblue;
+  border-radius: 30px;
+}
+
+#container3:hover {
+  transition: transform 0.8s ease;
+  transform: scale(1.1);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+#container4 {
+  height: 464px;
+  width: 300px;
+  background-color: aliceblue;
+  border-radius: 30px;
+}
+
+#container4:hover {
+  transition: transform 0.8s ease;
+  transform: scale(1.1);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+#container5 {
+  height: 464px;
+  width: 300px;
+  background-color: aliceblue;
+  border-radius: 30px;
+}
+
+#container5:hover {
+  transition: transform 0.8s ease;
+  transform: scale(1.1);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+#container6 {
+  height: 464px;
+  width: 300px;
+  background-color: aliceblue;
+  border-radius: 30px;
+}
+
+#container6:hover {
+  transition: transform 0.8s ease;
+  transform: scale(1.1);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+#container7 {
+  height: 464px;
+  width: 300px;
+  background-color: aliceblue;
+  border-radius: 30px;
+}
+
+#container7:hover {
+  transition: transform 0.8s ease;
+  transform: scale(1.1);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+#container8 {
+  height: 464px;
+  width: 300px;
+  background-color: aliceblue;
+  border-radius: 30px;
+}
+
+#container8:hover {
+  transition: transform 0.8s ease;
+  transform: scale(1.1);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+#container9 {
+  height: 464px;
+  width: 300px;
+  background-color: aliceblue;
+  border-radius: 30px;
+}
+
+#container9:hover {
+  transition: transform 0.8s ease;
+  transform: scale(1.1);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+#text1,
+#text2,
+#text3,
+#text4,
+#text5,
+#text6,
+#text7,
+#text8,
+#text9 {
+  margin-top: 7px;
+  padding-left: 10px;
+}
+
+#foot {
+  height: 834px;
+  width: 100%;
+  background-color: white;
+}
+
+#info2 {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 20px;
+  width: 800px;
+  padding-left: 19px;
+  padding-bottom: 15px;
+}
+
+#info3 {
+  padding-top: 25px;
+  padding-left: 40px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#info4 {
+  padding-left: 40px;
+  padding-top: 35px;
+  width: 900px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+#info41,
+#info42,
+#info43 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+#info41 a:hover {
+  text-decoration: underline;
+}
