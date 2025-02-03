@@ -1,0 +1,1 @@
+This project is a fully functional Airbnb clone built using HTML, CSS, JavaScript, PHP, and MySQL. It replicates key features of Airbnb, including user authentication, property listings, and booking functionality. The backend is powered by PHP and MySQL for data management, while the frontend delivers a clean and attractuve UI.
